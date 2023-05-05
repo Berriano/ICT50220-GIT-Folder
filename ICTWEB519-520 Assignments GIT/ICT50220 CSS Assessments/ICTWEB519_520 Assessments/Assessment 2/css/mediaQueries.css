@@ -1,0 +1,607 @@
+
+
+:root {
+	
+  --color-primary: #37b24d;
+  --color-primary-lighter: #87d194;
+  --color-primary-lighter-1: #c3e8ca;
+  --color-primary-lightest: #ebf7ed;
+  --color-primary--darker: #216b2e;
+  --color-secondary: #f03e3e;
+  --color-secondary-darker: #c03232;
+  --color-secondary-lighter: #cd5b5b;
+  --font-color-headings: #0b240f;
+  --font-color-text: #090909;
+  --font-color-text-light: #323232dc;
+  --font-color-link: #ffec99;
+  --img-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --box-shadow: 1.2rem 1.4rem 1.2rem -1rem rgba(0, 0, 0, 0.3);
+
+}
+
+
+@media screen and (max-width:81.25em){	
+	
+	
+	html{
+		
+		/*// Original font-size 1rem = 10px (10/16 = 62.5%) */
+		/*// 1300px font-size 1rem = 9px (9/16 = 56.25%) */
+		
+		font-size:56.25% ;
+				
+	}
+
+		
+	nav{
+		
+		margin-bottom: 10rem;
+		
+	}
+
+
+	nav ul {
+		
+		flex: 0 0 40%;
+		margin-right: 15rem;	
+		
+	}	
+	
+		
+	.services__grid{
+
+		padding:0 1rem;
+		
+		display: grid;
+		
+		gap: 2.4rem;
+	
+		align-items: center;
+		justify-items: center;
+		
+	}		
+
+		
+		
+	#services ul{
+				
+		padding: 2rem;
+			
+		width: 95%;
+		
+	}
+
+	aside{		
+
+	  padding: 2rem;
+		
+		width: 90%;
+
+		justify-self: flex-end;
+		
+	}
+
+		
+
+	figure:first-of-type {
+
+		margin-bottom: 2.4rem;
+		
+	}
+
+		
+	form{
+		
+		padding: 3.1rem;
+		
+	}	
+	
+}
+
+
+
+/*/////////// 1000px //////////// */
+
+
+@media screen and (max-width:62.5em){	
+	
+	
+	html{
+		
+		/*// Original font-size 1rem = 10px (10/16 = 62.5%) */
+		/*// 1300px font-size 1rem = 9px (9/16 = 56.25%) */
+		/*// 1000px font-size 1rem = 8px (8/16 = 50%) */
+		
+		font-size:50% ;
+		
+	}	
+	
+	#about-us,#services,#contact, header{
+	
+		height: 85vh;
+		
+	}
+	
+	
+	nav{
+		
+		margin-bottom: 6rem;
+	}
+	
+	.text-box{
+		
+		gap: 1rem;
+		
+	}
+		
+		
+	#title img{
+		
+		align-self: center;
+		margin-bottom: 10rem;
+	
+	}
+		
+		
+	#title a:link,
+	#title a:visited {  
+		
+	 	margin-top: 1.8rem;
+
+	  padding: .5rem 1rem;  
+		
+		text-align: center;	
+		align-self: center;	
+
+	}
+		
+		
+		
+		
+	.services__grid{
+	
+		padding:2rem;
+		
+		display: grid;
+		grid-template-columns:1fr 1fr;
+		gap: 4rem;
+	
+		align-items: stretch;
+		justify-items: center;		
+		
+	}
+		
+	
+	
+	#services ul{	
+	
+		padding: 4rem ;
+		
+		display: block;
+		flex-wrap: nowrap;		
+		
+		width: 80%;	
+		
+	}
+	
+	
+	aside{
+		
+		display: flex;
+		flex-direction: column;
+		gap: 6rem;
+		width: 80%;
+		justify-self: center;
+	}
+		
+
+	form{
+		padding: 2.1rem;
+	}
+	
+
+}
+
+
+/* ////////// 810px ///////////// */
+
+@media screen and (max-width:50.5em){
+	
+		
+	#about-us,#services,#contact, header{
+	
+		height: 100vh;
+		
+	}
+	
+	nav{
+	
+		width: 100%;
+	}
+	
+	nav > a:link{
+	
+		display: inline-block;
+		visibility: visible;
+		opacity: 1;
+		
+		padding: 3rem;		
+		
+	}
+	
+	
+	nav a svg{
+		
+		stroke:var(--color-primary) ;
+		width: 6.4rem;
+		height: 6.4rem;
+		
+	}
+	
+	
+	nav ul{
+	
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+	
+	#title{
+		
+		grid-template-columns: 1fr;
+		gap: 1rem;		
+		
+	}
+	
+	
+	#title img{
+		
+		width: 60%;
+		
+	}
+	
+	.text-box{
+		
+		gap: 3rem;
+		
+	}
+	
+	
+	
+	h3{
+		
+		font-size: 2.4rem;
+		padding: 6.4rem 0 ;
+		text-align: center;
+	
+	}
+
+	
+	
+	#about-us{
+
+		background-size: 60%;
+		background-position: 50% 25%;
+
+
+		
+
+		 grid-template-columns: 1fr;
+		 align-items: center;
+		 gap: 3rem;
+			
+		
+	}
+
+	.about__grid{
+
+
+		grid-template-columns:10rem 1fr;
+
+		gap: 2.4rem;
+		
+		padding: 1.6rem 3.2rem;
+		
+	}
+
+		
+	.services__grid{
+		
+		padding:0 1rem;
+		
+		display: grid;
+		grid-template-columns:1fr;
+		gap: 2rem;
+
+		align-items: center;
+		justify-items: center;
+		
+		}
+	
+	#services ul{
+	
+		
+		padding: 1rem ;
+		
+		justify-self: center;
+		display: flex;
+		flex-wrap: wrap;
+		
+		width: 85%;
+		
+	}
+	
+		
+	#services ul li{
+		
+		
+		flex: 0 0 50%;	
+		font-size: 1.6rem;
+		display: flex;
+		align-items: center;
+		
+		margin-bottom: .6rem;
+
+	}
+	
+
+
+	aside{
+		
+		display: inline-block;
+	  padding: 1rem 2rem;
+		width: 85%;
+
+		justify-self:center;		 
+		
+	}
+	
+	
+		
+		
+	#contact{
+		
+		background-size: 55%;
+	  background-position: 50% 25%;	
+
+		
+		
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-items: center;
+		gap: 10rem;
+		 
+		
+	}
+	
+	
+	form{
+		
+		width: 50%;
+		
+	}
+	
+	
+	footer{
+		
+		grid-template-columns: 1fr 1fr;
+	
+		align-items: center;
+		gap: 2rem;	
+		
+	}
+	
+}
+
+
+
+
+/* ////////// 585px ///////////// */
+
+@media screen and (max-width:36.5em){
+	
+	header{
+		
+		height: 70vh;
+		
+	}
+	
+	
+	header nav img{
+		
+		width: 8rem;
+		height: 8rem;
+		margin-top: 2rem;
+		margin-left: 2rem;
+		
+	}
+	
+	
+		
+	nav > a:link{
+			
+		padding: 1rem 3.2rem;		
+		
+	}
+	
+	
+	h1{
+		
+		font-size: 4rem;
+	}
+	
+
+	
+	h3{
+		
+		padding: 2rem 0;
+		
+	}
+	
+	.text-box{
+		
+		gap: 1em;
+		margin-bottom: 1.6em;
+	}
+	
+	
+
+	
+	#title hr{
+		
+		 display: none;
+		
+	}
+	
+	
+	#about-us{
+
+		background-size: 60%;
+		background-position: 50% 15%;	
+	
+		height: 85vh;	
+		
+		gap: 6rem;
+			
+		
+	}
+	
+
+	
+	#services{
+		
+		
+		margin-bottom: 10rem;
+		padding-bottom: 8rem;
+		
+		
+	}
+	
+	
+	#services ul{
+	
+		display: block;
+		
+		padding: 4rem ;
+		
+		width: 60%;
+		
+		
+	}
+	
+			
+	#services ul li{
+		
+		
+		flex:1;	
+		font-size: 1.6rem;
+		display: flex;
+		align-items: center;
+		
+		margin-bottom: .6rem;
+
+	}
+	
+		
+			
+	#contact{
+		
+		background-size: 55%;
+	  background-position: 50% 15%;	
+
+		gap: 0rem;	 
+		
+	}
+
+		
+	form{
+		
+
+		width: 80%;
+		
+		padding: 3rem 2.1rem;
+	}
+		
+	footer{
+		
+
+		row-gap:1.6rem;
+		column-gap: 0;
+		
+		
+	}
+		
+	
+}
+
+
+
+
+/* ////////// 400px ///////////// */
+
+@media screen and (max-width:25em){
+	
+	h1{
+		font-size: 3em;
+	}
+	h2{
+		font-size: 1.6rem;
+	}
+	
+	header{
+		
+		height: 50vh;
+	}
+	
+	#title img{
+		
+		display: none;
+		
+	}
+	
+	.about__grid{
+		
+		padding-left: 0;
+		padding-top: 0;
+		
+	}
+	
+	#about-us{
+		
+		background-image: none;
+		padding: 0;
+		height: 50vh;
+		gap: 0;
+		
+	}
+	
+	#about-us h3{
+		
+		padding: 3.2rem 3.2rem 0;
+		
+	}
+	
+	#services{
+		
+		height: 100vh;
+		margin-bottom: 4rem;
+		
+	}
+	
+	#contact{
+		
+		background-image: none;
+		gap: 0;
+		padding: 0;
+		height: 75vh;
+		
+	}
+	
+	form{
+		
+		align-self: flex-start;
+		
+	}
+	
+}
