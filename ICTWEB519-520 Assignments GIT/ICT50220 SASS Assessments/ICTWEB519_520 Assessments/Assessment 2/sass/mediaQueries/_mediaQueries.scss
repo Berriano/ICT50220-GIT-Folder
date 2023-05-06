@@ -627,3 +627,28 @@
     height: 130vh;
   }
 }
+
+
+
+
+///////// 280px galaxy fold ////////////
+
+
+
+@media screen and (max-width:17.5em) {
+
+
+  html {
+
+    /*//--- 1rem = 7px---//*/
+
+    font-size: 43.7%;
+  }
+
+
+  footer {
+
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
