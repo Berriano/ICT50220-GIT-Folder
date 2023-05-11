@@ -9,9 +9,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<!--- google fonts  --->
+	<!-- google fonts (above stylesheet) -->
 
-	<!--/ lato  -->
+
+	<!-- lato  -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,34 +31,48 @@
 
 
 
+
+	<!-- stylesheet  -->
+
 	<link rel="stylesheet" href="css/style.css">
 
 
+	<!-- title  -->
 
 	<title>ABC Optical</title>
+
+
+	<!-- favicon  -->
+
+	<link rel="icon" href="/images/favicon.ico">
+
 
 </head>
 
 <body>
 
-	<header>
-
+	<header id="header">
 
 		<nav>
 
-			<img src="images/logo-dkGreen.png" alt="ABC-logo">
+			<a href="#footer">
 
+				<img src="images/logo-dkGreen.png"
+					alt="Round ABC Optician Green Company logo">
 
-			<a href="#">
+			</a>
 
+			<!-- Hidden hamburger menu -->
+
+			<button>
 
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-					stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+					stroke-width="1.5" stroke="currentColor" class="w-6 h-6" alt="menu-icon">
 					<path stroke-linecap="round" stroke-linejoin="round"
 						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 				</svg>
 
-			</a>
+			</button>
 
 
 			<ul>
@@ -82,12 +97,7 @@
 
 			</ul>
 
-
-
-
-
 		</nav>
-
 
 
 		<section id="title">
@@ -95,11 +105,12 @@
 
 			<div class="text-box">
 
-				<h1>Realise your full potential and experiance a better quality of life.</h1>
+				<h1>Your <span>local</span> eye specialists,providing Brisbane families a
+					better quality of life.</h1>
 
 
 				<h2>At <span>ABC Optical</span> we sell ophthalmic glasses, sunglasses and
-					contact lenses, specialise
+					contact lenses, specialising
 					in optical
 					requirements for children.
 				</h2>
@@ -111,14 +122,11 @@
 
 			</div>
 
-			<img src="images/boy_with_glasses.jpg" alt="boy wearing glasses">
+			<img src="images/boy_with_glasses.jpg"
+				alt="Dark-haired boy in grey tracksuit and glasses relaxing on grass">
 
 
 		</section>
-
-
-
-
 
 
 	</header>
@@ -129,7 +137,7 @@
 
 
 
-		<!--- About us Section  -->
+		<!-- About us Section  -->
 
 
 
@@ -140,7 +148,6 @@
 
 
 			<div class="about__grid">
-
 
 
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -202,7 +209,7 @@
 
 
 
-		<!--- Services Section  -->
+		<!-- Services Section  -->
 
 
 
@@ -215,7 +222,6 @@
 
 
 				<div class="services__grid">
-
 
 					<ul>
 
@@ -402,25 +408,26 @@
 
 					</ul>
 
-					<!--/ sidebar  -->
+					<!-- sidebar  -->
 
 					<aside>
 
 
-						<h4><i>Our friendly staff</i></h4>
+						<h4><em>Our friendly staff</em></h4>
 
 
 						<figure>
 
-							<img src="images/optician_1.jpg" alt="optometrist-1">
+							<img src="images/optician_1.jpg"
+								alt="Optometrist Maria working on glasses display ">
 
 							<figcaption>
 
 
 								<blockquote>
 
-									<i>'Ive been working for ABC Optical for 4 years, serving each day
-										with passion and dedication.'</i>
+									<em>'Ive been working for ABC Optical for 4 years, serving each day
+										with passion and dedication.'</em>
 
 
 									<p>Maria</p>
@@ -437,7 +444,8 @@
 
 						<figure>
 
-							<img src="images/optician_2.jpg" alt="optometrist-2">
+							<img src="images/optician_2.jpg"
+								alt="Optometrist Jenny with eye test equipment">
 
 							<figcaption>
 
@@ -445,9 +453,9 @@
 								<blockquote>
 
 
-									<i>'Ive been working ABC Optical for 6 years, and I couldn't
+									<em>'Ive been working ABC Optical for 6 years, and I couldn't
 										imagine
-										working anywhere else.'</i>
+										working anywhere else.'</em>
 
 									<p>Jenny</p>
 
@@ -471,7 +479,7 @@
 
 
 
-		<!--- Contact Section  -->
+		<!-- Contact Section  -->
 
 
 
@@ -482,39 +490,27 @@
 			<h3>Contact</h3>
 
 
-
-
-
 			<form action="#">
 
 				<h4>Get in touch with the click of a button</h4>
 
-
 				<label for="name">name</label>
-
-				<input type="text" id="name" placeholder="John Smith" required>
-
+				<input type="text" placeholder="John Smith" id="name" required>
 
 				<label for="email">email</label>
-
 				<input type="email" id="email" placeholder="me@email.com" required>
 
-
 				<label for="phone">Phone number</label>
-
 				<input type="tel" id="phone" placeholder="0412345678" pattern="[0-9]{10}"
 					required>
 
-
+				<label for="enquiry">Enquiry</label>
 				<textarea name="enquiry" id="enquiry" cols="30" rows="5"
-					required>Enquiry</textarea>
+					placeholder="Add comments here..." required></textarea>
 
 				<button>Submit</button>
 
-
 			</form>
-
-
 
 		</section>
 
@@ -522,13 +518,23 @@
 
 	<hr>
 
-	<!---  footer  -->
+	<!--  footer  -->
 
 
-	<footer>
+	<footer id="footer">
 
-		<img src="images/logo-dkGreen.png" alt="ABC-logo">
+		<div class="footer__logo-box">
 
+			<a href="#header">
+
+				<img src="images/logo-dkGreen.png"
+					alt="Round ABC Optician Green Company logo">
+
+			</a>
+
+			<img src="images/w3c logo.PNG" alt="W3C compliance logo">
+
+		</div>
 
 		<ul>
 
@@ -556,8 +562,6 @@
 		</ul>
 
 
-
-
 		<ul>
 
 			<li>
@@ -581,8 +585,6 @@
 
 			</li>
 
-
-
 		</ul>
 
 
@@ -601,7 +603,8 @@
 				<p> Copyright &copy; 2023 by ABC Opticians, Inc. </p>
 			</li>
 
-			<!--- Add student Info inside footer  -->
+
+			<!-- Add student Info inside footer  -->
 
 			<li>
 
@@ -618,10 +621,7 @@
 
 	</footer>
 
-
-
-
-
 </body>
+
 
 </html>

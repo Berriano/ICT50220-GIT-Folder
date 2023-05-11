@@ -9,9 +9,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<!--- google fonts  --->
+	<!-- google fonts (above stylesheet) -->
 
-	<!--/ lato  -->
+
+	<!-- lato  -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,21 +30,50 @@
 		rel="stylesheet">
 
 
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<link rel="stylesheet" href="sass/main.css">
 
+
+	<!-- stylesheet  -->
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- title  -->
 
 	<title>ABC Optical</title>
+
+
+	<!-- favicon  -->
+
+	<link rel="icon" href="/images/favicon.ico">
+
 
 </head>
 
 <body>
 
-	<header>
-
-		<img src="images/logo-dkGreen.png" alt="ABC-logo">
+	<header id="header">
 
 		<nav>
+
+			<a href="#footer">
+
+				<img src="images/logo-dkGreen.png"
+					alt="Round ABC Optician Green Company logo">
+
+			</a>
+
+			<!-- Hidden hamburger menu -->
+
+			<button>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="w-6 h-6" alt="menu-icon">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
+
+			</button>
+
 
 			<ul>
 
@@ -59,28 +89,45 @@
 					<a href="#services">Services</a>
 				</li>
 
+
 				<li>
 					<a href="#contact">Contact</a>
 				</li>
+
 
 			</ul>
 
 		</nav>
 
 
-		<!--- Title Section  -->
-
 		<section id="title">
 
-			<h1>ABC Optical</h1>
+
+			<div class="text-box">
+
+				<h1>Your <span>local</span> eye specialists,providing Brisbane families a
+					better quality of life.</h1>
 
 
-			<h2>We sell ophthalmic glasses, sunglasses and contact lenses, specialising in
-				optical requirements for children.</h2>
+				<h2>At <span>ABC Optical</span> we sell ophthalmic glasses, sunglasses and
+					contact lenses, specialising
+					in optical
+					requirements for children.
+				</h2>
 
-			<a href="#contact">Find out more &rarr;</a>
+				<a href="#services">Find out more &rarr;</a>
+
+				<hr>
+
+
+			</div>
+
+			<img src="images/boy_with_glasses.jpg"
+				alt="Dark-haired boy in grey tracksuit and glasses relaxing on grass">
+
 
 		</section>
+
 
 	</header>
 
@@ -90,7 +137,7 @@
 
 
 
-		<!--- About us Section  -->
+		<!-- About us Section  -->
 
 
 
@@ -100,297 +147,339 @@
 			<h3>About us</h3>
 
 
-			<p>
-				We are a Brisbane based company which is well regarded locally. We are
-				recognised as
-				being able to manage children's needs with a professional caring approach.
-				We
-				employ two
-				full-time, in-store qualified optometrists able to diagnose and treat a
-				number of eye related
-				problems.
+			<div class="about__grid">
 
-			</p>
 
-			<p>
-				Our optometrists strive to make a positive difference to the health and
-				well-being
-				of our customers, endeavoring to obtain the best visual outcome so that
-				customers realise their full potential in work, study, sport and leisure.
-			</p>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+				</svg>
 
+				<p>
+					We are a Brisbane based company which is well regarded locally.
+				</p>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+				</svg>
+
+				<p>
+					We are recognised as being able to manage children's needs with a
+					professional caring approach.
+
+				</p>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+				</svg>
+
+				<p>
+					We employ two full-time, in-store qualified optometrists able to diagnose
+					and
+					treat a number of eye related problems.
+
+				</p>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+				</svg>
+
+				<p>
+					Our optometrists strive to make a positive difference to the health and
+					well-being
+					of our customers, endeavoring to obtain the best visual outcome so that
+					customers realise their full potential in work, study, sport and leisure.
+				</p>
+
+			</div>
 
 		</section>
 
 
 
 
-		<!--- Services Section  -->
+		<!-- Services Section  -->
 
 
 
 		<section id="services">
 
-			<h3>Services</h3>
+			<div class="container">
 
-			<ul>
 
-				<li>
+				<h3>Services</h3>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
 
-					<p>Eye Examinations (may be bulk-billed)</p>
+				<div class="services__grid">
 
-				</li>
+					<ul>
 
-				<li>
+						<li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-					<p>Spectacles</p>
+							<p>Eye Examinations (may be bulk-billed)</p>
 
-				</li>
+						</li>
 
-				<li>
+						<li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-					<p>Diabetic eye examinations</p>
+							<p>Spectacles</p>
 
-				</li>
+						</li>
 
-				<li>
+						<li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-					<p>Colour Vision assessments</p>
+							<p>Diabetic eye examinations</p>
 
-				</li>
+						</li>
 
-				<li>
+						<li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-					<p>Macular Degeneration tests</p>
+							<p>Colour Vision assessments</p>
 
-				</li>
+						</li>
 
+						<li>
 
-				<li>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+							<p>Macular Degeneration tests</p>
 
-					<p>Glaucoma & eye pressure testing</p>
+						</li>
 
-				</li>
 
-				<li>
+						<li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-					<p>Checks for Cataracts</p>
+							<p>Glaucoma & eye pressure testing</p>
 
-				</li>
+						</li>
 
-				<li>
+						<li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-					<p>Clearness of vision</p>
+							<p>Checks for Cataracts</p>
 
-				</li>
+						</li>
 
-			</ul>
+						<li>
 
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-			<ul>
+							<p>Clearness of vision</p>
 
-				<li>
+						</li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+						<li>
 
-					<p>Focusing ability (Presbyopia)</p>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-				</li>
+							<p>Focusing ability (Presbyopia)</p>
 
-				<li>
+						</li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+						<li>
 
-					<p>Eye muscle movement and control</p>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-				</li>
+							<p>Eye muscle movement and control</p>
 
-				<li>
+						</li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+						<li>
 
-					<p>Amblyopia (lazy eye)</p>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-				</li>
+							<p>Amblyopia (lazy eye)</p>
 
-				<li>
+						</li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+						<li>
 
-					<p>Contact lens fitting and management</p>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-				</li>
+							<p>Contact lens fitting and management</p>
 
-				<li>
+						</li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+						<li>
 
-					<p>Referrals for eye laser surgery</p>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-				</li>
+							<p>Referrals for eye laser surgery</p>
 
-				<li>
+						</li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+						<li>
 
-					<p>Mining & Industrial Safety Spectacles</p>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-				</li>
+							<p>Mining & Industrial Safety Spectacles</p>
 
-				<li>
+						</li>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-						stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M4.5 12.75l6 6 9-13.5" />
-					</svg>
+						<li>
 
-					<p>Advice on correct fitting</p>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M4.5 12.75l6 6 9-13.5" />
+							</svg>
 
-				</li>
+							<p>Advice on correct fitting of quality sunglasses</p>
 
-				<li>
+						</li>
 
-					<p style="margin-left: 2.6rem;">of quality sunglasses </p>
+					</ul>
 
-				</li>
+					<!-- sidebar  -->
 
-			</ul>
+					<aside>
 
 
-			<aside>
+						<h4><em>Our friendly staff</em></h4>
 
 
-				<h4><i>Our friendly staff</i></h4>
+						<figure>
 
+							<img src="images/optician_1.jpg"
+								alt="Optometrist Maria working on glasses display ">
 
-				<figure>
+							<figcaption>
 
-					<figcaption>
 
-						<img src="images/optician_1.jpg" alt="optometrist-1">
+								<blockquote>
 
-						<blockquote>
+									<em>'Ive been working for ABC Optical for 4 years, serving each day
+										with passion and dedication.'</em>
 
-							<i>'Ive been working for blahdy blah.Working for blahdy blahdy
-								blah'</i>
 
-							<p>Maria</p>
+									<p>Maria</p>
+									<p>Optometrist</p>
 
-							<p>Optometrist</p>
+								</blockquote>
 
-						</blockquote>
 
+							</figcaption>
 
-					</figcaption>
 
+						</figure>
 
-				</figure>
 
+						<figure>
 
-				<figure>
+							<img src="images/optician_2.jpg"
+								alt="Optometrist Jenny with eye test equipment">
 
-					<figcaption>
+							<figcaption>
 
-						<img src="images/optician_2.jpg" alt="optometrist-2">
 
-						<blockquote>
+								<blockquote>
 
 
-							<i>'Ive been working for blahdy blahdy blah.blah blah blah blah'</i>
+									<em>'Ive been working ABC Optical for 6 years, and I couldn't
+										imagine
+										working anywhere else.'</em>
 
-							<p>Jenny</p>
+									<p>Jenny</p>
 
-							<p>Optometrist</p>
+									<p>Optometrist</p>
 
-						</blockquote>
+								</blockquote>
 
-					</figcaption>
+							</figcaption>
 
-				</figure>
+						</figure>
 
 
-			</aside>
+					</aside>
 
+				</div>
+
+			</div>
 
 		</section>
 
 
 
 
-		<!--- Contact Section  -->
+		<!-- Contact Section  -->
 
 
 
@@ -405,131 +494,134 @@
 
 				<h4>Get in touch with the click of a button</h4>
 
-
 				<label for="name">name</label>
-
-				<input type="text" id="name" placeholder="John Smith" required>
-
+				<input type="text" placeholder="John Smith" id="name" required>
 
 				<label for="email">email</label>
-
 				<input type="email" id="email" placeholder="me@email.com" required>
 
-
 				<label for="phone">Phone number</label>
-
 				<input type="tel" id="phone" placeholder="0412345678" pattern="[0-9]{10}"
 					required>
 
-
+				<label for="enquiry">Enquiry</label>
 				<textarea name="enquiry" id="enquiry" cols="30" rows="5"
-					required>Enquiry</textarea>
+					placeholder="Add comments here..." required></textarea>
 
 				<button>Submit</button>
 
-
 			</form>
-
 
 		</section>
 
-
-
-		<!---  footer  -->
-
-
-		<footer>
-
-			<hr>
-
-			<ul>
-
-				<li>
-					<p>The Myer Centre</p>
-				</li>
-
-				<li>
-					<p>Shop Number 36</p>
-				</li>
-
-				<li>
-					<p>Level 1</p>
-				</li>
-
-				<li>
-					<p>Queen Street Mall</p>
-				</li>
-
-				<li>
-					<p>Brisbane</p>
-				</li>
-
-
-			</ul>
-
-
-			<ul>
-
-				<li>
-					<p>Mon - Thurs: 9am - 5.30pm</p>
-				</li>
-
-				<li>
-					<p>Fri:9am - 9pm</p>
-				</li>
-
-				<li>
-					<p>Sat: 9am - 5pm</p>
-				</li>
-
-				<li>
-					<p>Sun: 10am - 5pm</p>
-				</li>
-
-				<li>
-					<p>Tel:</p>
-					<a href="tel:0732567101">07 3256 7101</a>
-				</li>
-
-			</ul>
-
-
-			<ul>
-
-				<li>
-					<a href="#">Terms and conditions</a>
-
-				</li>
-
-				<li>
-					<p>All rights reserved.</p>
-				</li>
-
-				<li>
-					<p> Copyright &copy; 2023 by ABC Opticians, Inc. </p>
-				</li>
-
-				<!--- Add student Info inside footer  -->
-
-				<li>
-
-					<p>Student Name: Mark Beresford</p>
-
-				</li>
-
-				<li>
-					<p>Student Number: 471731221</p>
-
-				</li>
-
-			</ul>
-
-		</footer>
-
-
 	</main>
 
+	<hr>
+
+	<!--  footer  -->
+
+
+	<footer id="footer">
+
+		<div class="footer__logo-box">
+
+			<a href="#header">
+
+				<img src="images/logo-dkGreen.png"
+					alt="Round ABC Optician Green Company logo">
+
+			</a>
+
+			<img src="images/w3c logo.PNG" alt="W3C compliance logo">
+
+		</div>
+
+		<ul>
+
+			<li>
+				<p>The Myer Centre</p>
+			</li>
+
+			<li>
+				<p>Shop Number 36</p>
+			</li>
+
+			<li>
+				<p>Level 1</p>
+			</li>
+
+			<li>
+				<p>Queen Street Mall</p>
+			</li>
+
+			<li>
+				<p>Brisbane</p>
+			</li>
+
+
+		</ul>
+
+
+		<ul>
+
+			<li>
+				<p>Mon - Thurs: 9am - 5.30pm</p>
+			</li>
+
+			<li>
+				<p>Fri:9am - 9pm</p>
+			</li>
+
+			<li>
+				<p>Sat: 9am - 5pm</p>
+			</li>
+
+			<li>
+				<p>Sun: 10am - 5pm</p>
+			</li>
+
+			<li>
+				<p>Tel: <a href="tel:0732567101">07 3256 7101</a></p>
+
+			</li>
+
+		</ul>
+
+
+		<ul>
+
+			<li>
+				<a href="#">Terms and conditions</a>
+
+			</li>
+
+			<li>
+				<p>All rights reserved.</p>
+			</li>
+
+			<li>
+				<p> Copyright &copy; 2023 by ABC Opticians, Inc. </p>
+			</li>
+
+
+			<!-- Add student Info inside footer  -->
+
+			<li>
+
+				<p>Student Name: Mark Beresford</p>
+
+			</li>
+
+			<li>
+				<p>Student Number: 471731221</p>
+
+			</li>
+
+		</ul>
+
+	</footer>
 
 </body>
+
 
 </html>
