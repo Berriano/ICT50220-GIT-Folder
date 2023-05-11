@@ -1,0 +1,69 @@
+/*//--------------------------- Variables ------------------------------ //*/
+:root {
+  --color-primary: #37b24d;
+  --color-primary-lighter: #87d194;
+  --color-primary-lighter-1: #c3e8ca;
+  --color-primary-lightest: #ebf7ed;
+  --color-primary--darker: #216b2e;
+  --color-secondary: #f03e3e;
+  --color-secondary-darker: #c03232;
+  --color-secondary-lighter: #cd5b5b;
+  --font-color-headings: #0b240f;
+  --font-color-text: #090909;
+  --font-color-text-light: #323232dc;
+  --font-color-link: #ffec99;
+  --img-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --box-shadow: 1.2rem 1.4rem 1.2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+/*//----------------- MAIN LAYOUT  ----------------------*/
+/*/// Global Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/*////////// GLOBAL STYLES ///////////*/
+body {
+  box-sizing: inherit;
+  font-size: inherit;
+  font-family: "", sans-serif;
+  color: var(--font-color-text);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "", sans-serif;
+  color: var(--font-color-headings);
+}
+
+/*//-------------------- MEDIA QUERIES ----------------------- */
+@media screen and (max-width: 81.25em) {
+  html {
+    /*// Original font-size 1rem = 10px (10/16 = 62.5%) */
+    /*// 1300px font-size 1rem = 9px (9/16 = 56.25%) */
+  }
+}
+/*/////////// 1000px //////////// */
+@media screen and (max-width: 62.5em) {
+  html {
+    /*// Original font-size 1rem = 10px (10/16 = 62.5%) */
+    /*// 1300px font-size 1rem = 9px (9/16 = 56.25%) */
+    /*// 1000px font-size 1rem = 8px (8/16 = 50%) */
+  }
+}
+/* ////////// 810px ///////////// */
+/* ////////// 585px ///////////// */
+/* ////////// 400px ///////////// */

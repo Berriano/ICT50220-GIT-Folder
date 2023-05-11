@@ -98,7 +98,7 @@ nav {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 12rem;
+  margin-bottom: 10rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid #c3e8ca;
   background-image: -o-linear-gradient(bottom, rgba(195, 232, 202, 0.05) 90%, rgba(33, 107, 47, 0.6));
@@ -502,6 +502,8 @@ footer a img {
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
     margin-right: 15rem; }
+	hr {
+		display: none; }
   .services__grid {
     padding: 0 1rem;
     display: grid;
@@ -607,7 +609,7 @@ footer a img {
     grid-template-columns: 1fr;
     gap: 1rem; }
   #title img {
-    width: 60%;
+    width: 50%;
     margin-top: 2rem; }
   .text-box {
     gap: 3rem; }
@@ -741,7 +743,7 @@ footer a img {
     column-gap: 0; } }
 
 /*   400px   */
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 23em) {
   h1 {
     font-size: 3em; }
   h2 {
