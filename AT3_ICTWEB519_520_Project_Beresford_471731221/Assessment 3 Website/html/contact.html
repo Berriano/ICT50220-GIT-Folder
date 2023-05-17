@@ -47,10 +47,10 @@
 
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
+	<link rel="icon" href="/images/ML Strength_trans-logo.png">
 
+	<title>ML Strength - Contact</title>
 
-
-	<title>Contact</title>
 
 </head>
 
@@ -71,7 +71,6 @@
 
 			</button>
 
-
 		</nav>
 
 		<ul class="hidden-menu hidden">
@@ -80,29 +79,24 @@
 				<a href="../index.html" class="hidden-menu--link">home</a>
 			</li>
 
-
 			<li class="hidden-menu--list">
 				<a href="classes.html" class="hidden-menu--link">Classes</a>
 			</li>
-
 
 			<li class="hidden-menu--list">
 				<a href="our_philosophy.html" class="hidden-menu--link">Our
 					philosophy</a>
 			</li>
 
-
 			<li class="hidden-menu--list">
 				<a href="owner.html" class="hidden-menu--link">the owner</a>
 			</li>
-
 
 			<li class="hidden-menu--list">
 				<a href="contact.html" class="hidden-menu--link">contact</a>
 			</li>
 
 		</ul>
-
 
 
 		<img src="../images/ML Strength_trans-logo.png" class="logo"
@@ -114,7 +108,6 @@
 			<h2>Contact</h2>
 
 		</div>
-
 
 
 	</header>
@@ -130,47 +123,52 @@
 				<img src="/images/gym-building-inside.jpg" class="contact__image-box--image"
 					alt="gym">
 
-
 			</div>
-
-
 
 			<div class="contact__form-box">
 
+				<p class="contact__form-heading">Please fill in required fields:</p>
+
 				<form action="#" class="contact__form">
 
-					<label for="fname">First Name:</label>
-					<input type="text" id="fname" name="fname" placeholder="John" required>
-					<label for="lname">Last Name:</label>
-					<input type="text" id="lname" name="lname" placeholder="Smith" required>
-					<label for="email">Email:</label>
-					<input type="email" name="email" id="email" placeholder="me@email.com">
-					<label for="phone">Phone Number:</label>
-					<input type="tel" id="phone" name="phone" placeholder="0412345678">
-					<label for="birthday">Birthday:</label>
-					<input type="date" id="birthday" name="birthday" placeholder="dd/mm/yyyy">
+
+
+					<label for="fname" class="required">First Name</label>
+					<input type="text" id="fname" name="fname" placeholder="John"
+						pattern="[A-Za-z]{1,32}" title="Enter first name" required>
+
+					<label for="lname" class="required">Last Name</label>
+					<input type="text" id="lname" name="lname" placeholder="Smith"
+						pattern="[A-Za-z]{1,32}" title="Enter last name" required>
+
+					<label for="email" class="required">Email</label>
+					<input type="email" name="email" id="email" placeholder="me@email.com"
+						pattern="[^@\s]+@[^@\s]+" title="Enter valid email address" required>
+
+					<label for="phone">Phone Number</label>
+					<input type="tel" id="phone" name="phone" placeholder="0412345678"
+						minlength="10" maxlength="10" size="10" pattern="[0-9]{10}"
+						title="Enter your phone number - 10 characters">
+
+					<label for="birthday">Birthday</label>
+					<input type="date" id="birthday" name="birthday" placeholder="dd/mm/yyyy"
+						title="Use calendar to enter date of birth">
 
 					<input type="checkbox" id="marketing" name="marketing">
 					<label for="marketing">Sign me up for the weekly newsletter</label>
 
-					<div class="submit-btn">
+					<div class="form__btn">
 
 						<input type="submit" name="submit" value="submit">
+						<a href="#" target="_blank" class="form__btn--help">Help me!</a>
 
 					</div>
 
 				</form>
 
-
 			</div>
 
-
-
-
 		</section>
-
-
-
 
 	</main>
 
