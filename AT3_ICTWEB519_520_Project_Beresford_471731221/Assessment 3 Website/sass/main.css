@@ -87,7 +87,7 @@ h6 {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   color: var(--font-color-text-dark);
   letter-spacing: 0.8px;
   font-weight: 300;
@@ -97,24 +97,43 @@ h3 {
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
 }
-.white__stripe h2 {
-  font-size: 4.4rem;
+.white__stripe p {
+  color: var(--color-primary);
+  font-size: 10rem;
+  font-weight: 800;
+  transform: translateY(-2%);
+  margin-left: 14rem;
+  letter-spacing: 10px;
+}
+.white__stripe h1 {
+  font-size: 4rem;
   font-weight: 600;
   color: #000;
   text-transform: uppercase;
-  margin-right: 4rem;
+  margin-right: 10rem;
 }
 
 .btn:link,
 .btn:visited {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #fff;
-  padding: 1.2rem 2.4rem;
+  padding: 1rem 2rem;
   background-color: var(--color-secondary);
   border-radius: 1rem;
   text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.1);
+  color: var(--color-secondary);
+  background-color: #fff;
+  border-radius: 0;
+  border-bottom: 3px solid var(--color-secondary);
 }
 
 .page-header {
@@ -153,35 +172,29 @@ footer .text-box__list {
   padding: 4rem 0;
 }
 footer .text-box__list-link:link, footer .text-box__list-link:visited {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.15s;
+  transition: all 0.1s;
   display: inline-block;
+  border-bottom: 2px solid #fff;
 }
 footer .text-box__list-link:hover, footer .text-box__list-link:active {
   color: #fff;
   transform: scale(1.05);
   color: var(--color-secondary);
+  border-bottom: 2px solid var(--color-secondary);
 }
 footer .text-box__copyright {
   grid-column: start 5/start 8;
   border-top: 1px solid #fff;
   padding: 4rem 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 /* Page styles*/
-/*//---------------- MAIN PAGE ------------*/
-.main-image {
-  background-image: linear-gradient(var(--gradient-black)), url(../images/gym-Main_page-NEW.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 header {
   color: var(--font-color-text);
 }
@@ -193,17 +206,33 @@ nav {
   display: grid;
   align-items: start;
 }
-nav .btn {
+nav .main_btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
   padding: 0.4rem;
   margin-top: 1rem;
+  transition: all 0.2s;
 }
 nav .icon {
   width: 6.4rem;
   height: 6.4rem;
   fill: var(--color-secondary);
+  transition: all 0.2s;
+}
+nav .icon:hover {
+  transform: scale(1.15);
+}
+nav .burger-open {
+  fill: #fff;
+}
+nav .burger-open:hover {
+  fill: var(--color-secondary);
+  transform: scale(1.15);
+}
+nav .burger-open:focus {
+  fill: #fff;
+  transform: scale(1.15);
 }
 
 .logo {
@@ -218,15 +247,16 @@ nav .icon {
   grid-column: 2/3;
   grid-row: 1/2;
   list-style: none;
-  font-size: 1.8rem;
-  width: 25%;
+  font-size: 2rem;
+  width: 30%;
   z-index: 100;
   opacity: 1;
   visibility: visible;
+  margin-top: 0.5rem;
 }
 .hidden-menu--list {
-  background-color: var(--color-primary--darkest);
-  padding: 1.2rem 0 1.2rem 2rem;
+  background-color: linear-gradient(var(--gradient-black));
+  padding: 0.2rem 0 0.6rem 2rem;
 }
 .hidden-menu--link:link, .hidden-menu--link:visited {
   display: inline-block;
@@ -234,10 +264,12 @@ nav .icon {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.2s;
+  border-bottom: 2px solid #fff;
 }
 .hidden-menu--link:hover, .hidden-menu--link:active {
   color: var(--color-secondary);
   transform: scale(1.08) translateY(-5%);
+  border-bottom: 2px solid var(--color-secondary);
 }
 
 .hidden {
@@ -246,6 +278,7 @@ nav .icon {
   visibility: hidden;
 }
 
+/*//---------------- MAIN PAGE ------------*/
 .text--box {
   grid-column: 2/3;
   display: grid;
@@ -256,20 +289,40 @@ nav .icon {
 }
 .text--box__link:link, .text--box__link:visited {
   display: inline-block;
+  background-color: var(--color-secondary);
+  padding: 0.5rem 1.2rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 5px solid transparent;
+}
+.text--box__link:hover, .text--box__link:active {
+  transform: scale(1.15);
+  background-color: var(--gradient-black);
+  border: 5px solid var(--color-secondary);
 }
 .text--box p {
   font-size: 2rem;
   align-self: center;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .text--box p span {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
 }
 .text--box h1 {
   font-size: 5.4rem;
   line-height: 0.95;
   align-self: center;
   color: var(--font-color-headings);
+}
+
+.main-image {
+  background-image: linear-gradient(var(--gradient-black)), url(../images/gym-Main_page-NEW.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-page {
@@ -286,17 +339,18 @@ nav .icon {
   outline: 5px solid var(--color-secondary);
   outline-offset: 5px;
   justify-self: stretch;
+  align-self: start;
 }
 .main-page__text-box p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 .main-page__text-box p:not(:last-of-type) {
-  margin-bottom: 4.4rem;
+  margin-bottom: 6rem;
 }
 .main-page__text-box p:last-of-type {
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
 }
 .main-page h3 {
   text-transform: uppercase;
@@ -304,9 +358,13 @@ nav .icon {
 }
 .main-page__link:link, .main-page__link:visited {
   display: block;
-  width: 25%;
+  width: 30%;
   margin: 0 auto;
   text-align: center;
+  padding: 0.6rem 1rem;
+}
+.main-page__link:hover, .main-page__link:active {
+  transform: scale(1);
 }
 
 /*//---------------- CLASSES PAGE ------------*/
@@ -353,22 +411,23 @@ nav .icon {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
-  transform: translateY(3%);
+  gap: 3rem;
+  transform: translateY(5%);
 }
-.accordion__heading {
-  font-size: 2.4rem;
+.accordion h3 {
+  font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 1.2rem;
 }
-.accordion__heading-p {
+.accordion p {
   text-align: center;
-  font-size: 2.4rem;
-  margin-bottom: 2.4rem;
+  font-size: 2rem;
 }
-.accordion__heading-p span {
+.accordion p span {
   color: var(--color-secondary);
   font-size: 3.2rem;
+}
+.accordion__heading-paragraph {
+  margin-bottom: 3.2rem;
 }
 .accordion__grid {
   display: grid;
@@ -380,19 +439,19 @@ nav .icon {
   background-color: #fff;
   padding: 1rem;
   border-radius: 10px;
+  border-top: 3px solid transparent;
 }
 .accordion__number {
-  font-size: 2.4rem;
   color: var(--color-secondary);
 }
 .accordion__paragraph {
-  font-size: 2.4rem;
   font-weight: 600;
 }
 .accordion__icon {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transform: rotate(0deg);
 }
 .accordion__icon-chevron {
   stroke: var(--color-secondary);
@@ -406,8 +465,7 @@ nav .icon {
   text-align: center;
 }
 .accordion__hidden-box p {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1.2rem;
   text-align: center;
 }
@@ -421,6 +479,14 @@ nav .icon {
 .accordion__hidden-box ul li {
   text-align: left;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+.accordion__hidden-box ul li svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-right: 0.5rem;
+  stroke: var(--color-secondary);
 }
 .accordion__gallery {
   grid-column: 1/7;
@@ -483,6 +549,10 @@ nav .icon {
   grid-row: 4/6;
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+
 .open {
   border-top: 3px solid var(--color-secondary);
 }
@@ -511,14 +581,15 @@ nav .icon {
 .philosophy__text-box {
   grid-column: 2/8;
   grid-row: 4/-1;
+  margin-bottom: 8rem;
 }
 .philosophy__text-box-p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--font-color-text-dark);
-  line-height: 1.6;
+  line-height: 1.5;
 }
-.philosophy__text-box-p:not(:last-of-type) {
-  margin-bottom: 4rem;
+.philosophy__text-box-p {
+  margin-bottom: 2rem;
 }
 
 /*//---------------- OWNER PAGE ------------*/
@@ -533,12 +604,13 @@ nav .icon {
 .owner__text-box {
   grid-column: 2/3;
   grid-row: 2/3;
-  font-size: 1.8rem;
-  padding: 4rem 0;
+  font-size: 2rem;
   color: var(--font-color-text-dark);
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 .owner__text-box-p:not(:last-of-type) {
-  margin-bottom: 3.6rem;
+  margin-bottom: 2.4rem;
 }
 .owner__image-box {
   grid-column: 3/4;
@@ -557,6 +629,8 @@ nav .icon {
   grid-template-rows: 2.4rem 1fr;
   grid-template-columns: 1fr 1fr;
   align-items: start;
+  column-gap: 8rem;
+  padding: 6rem 0;
 }
 .contact__header-image {
   background-image: linear-gradient(var(--gradient-blackest)), url(/images/gym-building.jpg);
@@ -564,7 +638,7 @@ nav .icon {
 .contact__image-box {
   grid-column: 1/2;
   grid-row: 2/3;
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 .contact__image-box--image {
   max-width: 100%;
@@ -577,10 +651,10 @@ nav .icon {
   grid-row: 2/3;
 }
 .contact__form {
-  padding: 3.6rem 12rem;
+  padding: 3.6rem 8rem;
 }
 .contact__form-heading {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   text-align: center;
   color: var(--font-color-text-dark);
 }
@@ -609,7 +683,7 @@ nav .icon {
   display: inline-block;
 }
 .contact__form input, .contact__form label {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 0.8rem;
   color: var(--font-color-text-dark);
 }
@@ -644,7 +718,8 @@ input[type=checkbox]::after {
   border: 2px solid var(--color-secondary);
   padding: 0.35rem;
   visibility: visible;
-  transform: translate(5%, -30%) scale(1.5);
+  transform: translate(5%, -50%) scale(1.5);
+  cursor: pointer;
 }
 
 input[type=checkbox]:checked {
@@ -658,11 +733,13 @@ input[type=checkbox]:checked {
 .form__btn--help:link, .form__btn--help:visited {
   display: inline-block;
   margin-left: 2.4rem;
-  padding: 0.6rem 2.4rem;
+  padding: 0.5rem 1rem;
   background-color: var(--font-color-headings);
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 2px solid var(--color-secondary);
   color: var(--color-secondary);
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-decoration: none;
   transition: all 0.2s;
   font-weight: 600;
@@ -670,8 +747,9 @@ input[type=checkbox]:checked {
 .form__btn--help:hover, .form__btn--help:active {
   background-color: var(--color-secondary);
   color: var(--font-color-headings);
-  transform: scale(1.05) translateY(-2%);
+  transform: scale(1.02) translateY(-2%);
   box-shadow: var(--box-shadow);
+  border-bottom: 2px solid #000;
 }
 
 input[type=submit] {
@@ -681,6 +759,18 @@ input[type=submit] {
   background-color: var(--color-secondary);
   border-radius: 6px;
   color: #fff;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  transform: scale(1.1) translateY(-3%);
+  box-shadow: var(--box-shadow--heavy);
+  border-bottom: 2px solid var(--color-secondary);
+  text-transform: uppercase;
+  outline: 3px solid var(--color-primary-lighter);
+  outline-offset: 3px;
 }
 
 /*//-------------------- MEDIA QUERIES ----------------------- */

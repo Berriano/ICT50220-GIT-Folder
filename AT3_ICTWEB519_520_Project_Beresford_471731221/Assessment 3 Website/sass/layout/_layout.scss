@@ -96,7 +96,7 @@ h6 {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   color: var(--font-color-text-dark);
   letter-spacing: .8px;
   font-weight: 300;
@@ -108,16 +108,28 @@ h3 {
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
+
+  & p {
 
 
-  & h2 {
+    color: var(--color-primary);
+    font-size: 10rem;
+    font-weight: 800;
+    transform: translateY(-2%);
+    margin-left: 14rem;
+    letter-spacing: 10px;
 
-    font-size: 4.4rem;
+  }
+
+
+  & h1 {
+
+    font-size: 4rem;
     font-weight: 600;
     color: #000;
     text-transform: uppercase;
-    margin-right: 4rem;
+    margin-right: 10rem;
   }
 
 
@@ -127,14 +139,28 @@ h3 {
 
 .btn:link,
 .btn:visited {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #fff;
 
-  padding: 1.2rem 2.4rem;
+  padding: 1rem 2rem;
   background-color: var(--color-secondary);
   border-radius: 1rem;
 
   text-decoration: none;
+
+  transition: all .2s;
+  border-bottom: 3px solid transparent;
+
+}
+
+.btn:hover,
+.btn:active {
+
+  transform: scale(1.1);
+  color: var(--color-secondary);
+  background-color: #fff;
+  border-radius: 0;
+  border-bottom: 3px solid var(--color-secondary);
 
 }
 
@@ -190,22 +216,21 @@ footer {
       list-style: none;
       align-items: center;
       justify-content: space-between;
-
       padding: 4rem 0;
 
 
 
-      &-item {}
-
 
       &-link:link,
       &-link:visited {
-        font-size: 1.8rem;
+        font-size: 2rem;
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
-        transition: all .15s;
+        transition: all .1s;
         display: inline-block;
+        border-bottom: 2px solid #fff;
+
 
       }
 
@@ -215,6 +240,7 @@ footer {
         color: #fff;
         transform: scale(1.05);
         color: var(--color-secondary);
+        border-bottom: 2px solid var(--color-secondary);
 
 
       }
@@ -229,7 +255,7 @@ footer {
 
     border-top: 1px solid #fff;
     padding: 4rem 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
   }
 }
@@ -237,21 +263,10 @@ footer {
 
 
 
+
 /* Page styles*/
 
-/*//---------------- MAIN PAGE ------------*/
 
-
-
-.main-image {
-
-
-  background-image: linear-gradient(var(--gradient-black)), url(../images/gym-Main_page-NEW.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
 
 header {
   color: var(--font-color-text);
@@ -266,13 +281,15 @@ nav {
   display: grid;
   align-items: start;
 
-  & .btn {
+  & .main_btn {
 
     border: none;
     background-color: transparent;
     cursor: pointer;
     padding: .4rem;
     margin-top: 1rem;
+    transition: all .2s;
+
 
   }
 
@@ -281,10 +298,39 @@ nav {
     width: 6.4rem;
     height: 6.4rem;
     fill: var(--color-secondary);
+    transition: all .2s;
+
+  }
+
+  & .icon:hover {
+
+    transform: scale(1.15);
+
+  }
+
+
+  & .burger-open {
+
+    fill: #fff;
+
+  }
+
+  & .burger-open:hover {
+
+    fill: var(--color-secondary);
+    transform: scale(1.15);
+
+  }
+
+  & .burger-open:focus {
+
+    fill: #fff;
+    transform: scale(1.15);
 
   }
 
 }
+
 
 
 .logo {
@@ -303,18 +349,27 @@ nav {
   grid-column: 2/3;
   grid-row: 1/2;
   list-style: none;
-  font-size: 1.8rem;
-  width: 25%;
+  font-size: 2rem;
+  width: 30%;
   z-index: 100;
   opacity: 1;
   visibility: visible;
+  margin-top: .5rem;
+
+
+
 
 
 
   &--list {
 
-    background-color: var(--color-primary--darkest);
-    padding: 1.2rem 0 1.2rem 2rem;
+    background-color: linear-gradient(var(--gradient-black));
+    padding: .2rem 0 .6rem 2rem;
+    // border: 1px solid var(--color-secondary);
+
+
+
+
 
   }
 
@@ -325,6 +380,8 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     transition: all .2s;
+    border-bottom: 2px solid #fff;
+
   }
 
   &--link:hover,
@@ -332,14 +389,10 @@ nav {
 
     color: var(--color-secondary);
     transform: scale(1.08) translateY(-5%);
+    border-bottom: 2px solid var(--color-secondary);
 
   }
-
-
-
 }
-
-
 
 .hidden {
   display: none;
@@ -347,6 +400,11 @@ nav {
   visibility: hidden;
 
 }
+
+
+/*//---------------- MAIN PAGE ------------*/
+
+
 
 
 .text--box {
@@ -367,16 +425,33 @@ nav {
   &__link:visited {
 
     display: inline-block;
+    background-color: var(--color-secondary);
+    padding: .5rem 1.2rem;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all .2s;
+    border: 5px solid transparent;
+  }
+
+  &__link:hover,
+  &__link:active {
+
+    transform: scale(1.15);
+    background-color: var(--gradient-black);
+    border: 5px solid var(--color-secondary);
+
   }
 
 
   p {
     font-size: 2rem;
     align-self: center;
-    line-height: 1.6;
+    line-height: 1.5;
 
     span {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
 
     }
 
@@ -389,6 +464,18 @@ nav {
     align-self: center;
     color: var(--font-color-headings);
   }
+
+}
+
+
+
+.main-image {
+
+
+  background-image: linear-gradient(var(--gradient-black)), url(../images/gym-Main_page-NEW.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -412,6 +499,7 @@ nav {
     outline: 5px solid var(--color-secondary);
     outline-offset: 5px;
     justify-self: stretch;
+    align-self: start;
 
   }
 
@@ -420,16 +508,16 @@ nav {
 
     & p {
 
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-weight: 400;
-      line-height: 1.7;
+      line-height: 1.5;
 
       &:not(:last-of-type) {
-        margin-bottom: 4.4rem;
+        margin-bottom: 6rem;
       }
 
       &:last-of-type {
-        margin-bottom: 3.2rem;
+        margin-bottom: 6.4rem;
       }
     }
   }
@@ -445,9 +533,17 @@ nav {
   &__link:visited {
 
     display: block;
-    width: 25%;
+    width: 30%;
     margin: 0 auto;
     text-align: center;
+    padding: .6rem 1rem;
+  }
+
+  &__link:hover,
+  &__link:active {
+
+    transform: scale(1);
+
   }
 }
 
@@ -508,9 +604,10 @@ nav {
 }
 
 
+// ACCORDION
+
+
 .accordion {
-
-
 
   grid-column: 8/13;
   grid-row: 1/-1;
@@ -520,35 +617,38 @@ nav {
   padding: 2rem 2rem 2rem 10rem;
   border-radius: 20px;
 
-
-
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 3rem;
 
-  transform: translateY(3%);
+  transform: translateY(5%);
 
-  &__heading {
 
-    font-size: 2.4rem;
+  & h3 {
+
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 1.2rem;
 
-    &-p {
 
-      text-align: center;
-      font-size: 2.4rem;
-      margin-bottom: 2.4rem;
 
-      & span {
-        color: var(--color-secondary);
-        font-size: 3.2rem;
-      }
+  }
 
+
+  & p {
+
+    text-align: center;
+    font-size: 2rem;
+
+    & span {
+      color: var(--color-secondary);
+      font-size: 3.2rem;
 
     }
 
+  }
 
+  &__heading-paragraph {
+    margin-bottom: 3.2rem;
   }
 
 
@@ -563,27 +663,29 @@ nav {
     background-color: #fff;
     padding: 1rem;
     border-radius: 10px;
+    border-top: 3px solid transparent;
   }
 
+
   &__number {
-    font-size: 2.4rem;
+
     color: var(--color-secondary);
   }
 
+
   &__paragraph {
 
-    font-size: 2.4rem;
     font-weight: 600;
 
-
-
   }
+
 
   &__icon {
 
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transform: rotate(0deg);
 
 
     &-chevron {
@@ -593,10 +695,9 @@ nav {
       height: 2.4rem;
     }
 
-
-
-
   }
+
+
 
   &__hidden-box {
     grid-column: 2;
@@ -606,13 +707,12 @@ nav {
 
   }
 
+
   &__hidden-box p {
 
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1.2rem;
     text-align: center;
-
 
   }
 
@@ -622,10 +722,8 @@ nav {
     font-size: 1.4rem;
     font-weight: 500;
     list-style: none;
-    // height: 12rem;
     display: inline-block;
     margin-left: 2rem;
-
 
   }
 
@@ -635,6 +733,16 @@ nav {
     text-align: left;
     width: 100%;
 
+    display: flex;
+    align-items: center;
+
+    & svg {
+
+      width: 1.7rem;
+      height: 1.7rem;
+      margin-right: .5rem;
+      stroke: var(--color-secondary);
+    }
 
   }
 
@@ -734,26 +842,32 @@ nav {
 
       }
 
-
     }
-
 
   }
 
+}
 
 
+.rotate {
 
+  transform: rotate(180deg);
 
 }
+
+
 
 .open {
 
   border-top: 3px solid var(--color-secondary);
+
 }
+
 
 .open .accordion__hidden-box {
 
   display: block;
+
 
 }
 
@@ -789,18 +903,22 @@ nav {
 
     grid-column: 2/8;
     grid-row: 4/-1;
+    margin-bottom: 8rem;
 
     &-p {
 
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: var(--font-color-text-dark);
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
-    &-p:not(:last-of-type) {
+    &-p {
 
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
+
+
+
   }
 
 }
@@ -814,7 +932,6 @@ nav {
 
   grid-template-rows: 2.4rem 1fr;
   column-gap: 8rem;
-
   align-items: center;
 
 
@@ -828,14 +945,16 @@ nav {
 
     grid-column: 2/3;
     grid-row: 2/3;
-    font-size: 1.8rem;
-    padding: 4rem 0;
+    font-size: 2rem;
     color: var(--font-color-text-dark);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+
 
 
     &-p:not(:last-of-type) {
 
-      margin-bottom: 3.6rem;
+      margin-bottom: 2.4rem;
     }
 
   }
@@ -871,6 +990,9 @@ nav {
   grid-template-columns: 1fr 1fr;
 
   align-items: start;
+  column-gap: 8rem;
+
+  padding: 6rem 0;
 
 
   &__header-image {
@@ -883,7 +1005,8 @@ nav {
 
     grid-column: 1/2;
     grid-row: 2/3;
-    padding-top: 8rem;
+    padding-top: 10rem;
+
 
     &--image {
 
@@ -892,7 +1015,6 @@ nav {
       outline-offset: 2px;
       box-shadow: var(--img-shadow);
     }
-
 
   }
 
@@ -906,11 +1028,11 @@ nav {
   &__form {
 
 
-    padding: 3.6rem 12rem;
+    padding: 3.6rem 8rem;
 
     &-heading {
 
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       text-align: center;
       color: var(--font-color-text-dark);
     }
@@ -938,9 +1060,7 @@ nav {
 
       outline: none;
 
-
     }
-
 
 
     & input:focus:invalid {
@@ -955,9 +1075,6 @@ nav {
     }
 
 
-
-
-
     & label {
       display: inline-block;
     }
@@ -965,7 +1082,7 @@ nav {
 
     & input,
     & label {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: .8rem;
       color: var(--font-color-text-dark);
 
@@ -1017,7 +1134,8 @@ input[type=checkbox]::after {
   border: 2px solid var(--color-secondary);
   padding: .35rem;
   visibility: visible;
-  transform: translate(5%, -30%) scale(1.5);
+  transform: translate(5%, -50%) scale(1.5);
+	cursor: pointer;
 
 
 }
@@ -1038,11 +1156,13 @@ input[type=checkbox]:checked {
   &--help:visited {
     display: inline-block;
     margin-left: 2.4rem;
-    padding: .6rem 2.4rem;
+    padding: .5rem 1rem;
     background-color: var(--font-color-headings);
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px solid var(--color-secondary);
     color: var(--color-secondary);
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-decoration: none;
     transition: all .2s;
     font-weight: 600;
@@ -1052,10 +1172,12 @@ input[type=checkbox]:checked {
   &--help:active {
 
     background-color: var(--color-secondary);
+
     color: var(--font-color-headings);
-    transform: scale(1.05) translateY(-2%);
+    transform: scale(1.02) translateY(-2%);
     box-shadow: var(--box-shadow);
 
+    border-bottom: 2px solid #000;
 
   }
 
@@ -1072,4 +1194,19 @@ input[type=submit] {
   background-color: var(--color-secondary);
   border-radius: 6px;
   color: #fff;
+  transition: all .2s;
+  border-bottom: 2px solid transparent;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+
+
+  transform: scale(1.1) translateY(-3%);
+  box-shadow: var(--box-shadow--heavy);
+
+  border-bottom: 2px solid var(--color-secondary);
+  text-transform: uppercase;
+  outline: 3px solid var(--color-primary-lighter);
+  outline-offset: 3px
 }
