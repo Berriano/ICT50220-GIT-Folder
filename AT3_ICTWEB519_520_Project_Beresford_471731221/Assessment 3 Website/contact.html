@@ -63,40 +63,20 @@
 
 	<header class="grid__25vh page-header contact__header-image">
 
-		<nav>
 
-			<button class="main_btn">
 
-				<ion-icon name="menu" class="icon"></ion-icon>
+		<!--// library  -->
 
-			</button>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
 
-		</nav>
 
-		<ul class="hidden-menu hidden">
 
-			<li class="hidden-menu--list">
-				<a href="../index.html" class="hidden-menu--link">home</a>
-			</li>
+		<!--// library imported header  -->
 
-			<li class="hidden-menu--list">
-				<a href="classes.html" class="hidden-menu--link">Classes</a>
-			</li>
 
-			<li class="hidden-menu--list">
-				<a href="our_philosophy.html" class="hidden-menu--link">Our
-					philosophy</a>
-			</li>
 
-			<li class="hidden-menu--list">
-				<a href="owner.html" class="hidden-menu--link">the owner</a>
-			</li>
+		<div class="div-head" w3-include-html="/navigation.html"></div>
 
-			<li class="hidden-menu--list">
-				<a href="contact.html" class="hidden-menu--link">contact</a>
-			</li>
-
-		</ul>
 
 
 		<img src="../images/ML Strength_trans-logo.png" class="logo"
@@ -122,12 +102,12 @@
 
 			<div class="contact__image-box">
 
-				<img src="/images/gym-building-inside.jpg" class="contact__image-box--image"
-					alt="gym">
+				<img src="/images/gym-building-inside.jpg" alt="gym">
 
 			</div>
 
 			<div class="contact__form-box">
+
 
 				<h3 class="contact__form-heading">Please fill in required fields:</h3>
 
@@ -136,8 +116,12 @@
 
 
 					<label for="fname" class="required">First Name</label>
+
 					<input type="text" id="fname" name="fname" placeholder="John"
 						pattern="[A-Za-z]{1,32}" title="Enter first name" required>
+
+
+
 
 					<label for="lname" class="required">Last Name</label>
 					<input type="text" id="lname" name="lname" placeholder="Smith"
@@ -159,10 +143,29 @@
 					<input type="checkbox" id="marketing" name="marketing">
 					<label for="marketing">Sign me up for the weekly newsletter</label>
 
+
+
 					<div class="form__btn">
 
 						<input type="submit" name="submit" value="submit">
+
 						<a href="#" target="_blank" class="form__btn--help">Help me!</a>
+
+						<!-- // Add video here and display:none  -->
+
+
+						<div class="modal">
+
+
+
+							<iframe src="https://www.youtube.com/embed/y881t8ilMyc"
+								title="Help Video" class="video " height="500px" width="750px"
+								name="youtube" noborder="0" width="830" height="800" scrolling="yes"
+								seamless></iframe>
+
+						</div>
+
+						<button id='close-btn'>Close</button>
 
 					</div>
 
@@ -174,67 +177,27 @@
 
 	</main>
 
+
+
 	<!--  FOOTER  -->
 
 
-	<footer>
 
-		<div class="container grid">
-
-			<div class="logo-box">
-
-				<img src="/images/ML Strength_trans-logo.png" class="logo-box--image"
-					alt="logo">
-
-			</div>
+	<!--// library Imported Footer -->
 
 
-
-			<div class="text-box">
-
-				<ul class="text-box__list">
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">Company</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">contact us</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">Privacy Policy</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">T&C</a>
-					</li>
-
-				</ul>
-
-			</div>
+	<div w3-include-html="../footer.html"></div>
 
 
-			<div class="text-box__copyright">
-
-				<p class="copyright__paragraph">
-					&copy;2023 by HL Strength - Health and fitness.
-				</p>
-				<p class="copyright__paragraph">
-					All rights reserved
-				</p>
+	<script src="/javascript/script.js"></script>
 
 
-			</div>
+	<!--// library  -->
 
 
-		</div>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script>w3.includeHTML();</script>
 
-
-	</footer>
-
-
-	<script src="../javascript/script.js"></script>
 
 </body>
 

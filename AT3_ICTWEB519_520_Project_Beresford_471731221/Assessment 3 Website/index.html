@@ -41,19 +41,21 @@
 	<!-- CSS  --->
 
 
+
 	<link rel="stylesheet" href="sass/main.css">
 
 	<!-- ICON SCRIPT  -->
 
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-
 	<link rel="icon" href="/images/ML Strength_trans-logo.png">
 
 
 	<title>ML Strength</title>
 
+
 </head>
+
 
 
 
@@ -63,46 +65,20 @@
 
 	<header class="grid__4-cols main-image">
 
-		<nav>
-
-			<button class="main_btn">
-
-				<ion-icon name="menu" class="icon"></ion-icon>
-
-			</button>
-
-		</nav>
 
 
-		<!-- Hidden Menu -->
+		<!--// library  -->
+
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
 
 
-		<ul class="hidden-menu hidden">
 
-			<li class="hidden-menu--list">
-				<a href="index.html" class="hidden-menu--link">home</a>
-			</li>
+		<!--// library imported header  -->
 
-			<li class="hidden-menu--list">
-				<a href="html/classes.html" class="hidden-menu--link">Classes</a>
-			</li>
 
-			<li class="hidden-menu--list">
-				<a href="html/our_philosophy.html" class="hidden-menu--link">Our
-					philosophy</a>
-			</li>
 
-			<li class="hidden-menu--list">
-				<a href="html/owner.html" class="hidden-menu--link">the owner</a>
-			</li>
+		<div class="div-head" w3-include-html="/navigation.html"></div>
 
-			<li class="hidden-menu--list">
-				<a href="html/contact.html" class="hidden-menu--link">contact</a>
-			</li>
-
-		</ul>
-
-		<!-- Hidden menu end -->
 
 
 		<img src="images/ML Strength_trans-logo.png" class="logo"
@@ -120,7 +96,7 @@
 
 
 
-			<a href="html/contact.html" class="text--box__link">Get in touch
+			<a href="contact.html">Get in touch
 				<span>&rarr;</span> </a>
 
 		</div>
@@ -134,8 +110,7 @@
 
 		<section class="main-page">
 
-			<img src="images/gym-pair.jpg" class="main-page__image"
-				alt="inside of ML strength gym">
+			<img src="images/gym-pair.jpg" alt="inside of ML strength gym">
 
 			<div class="main-page__text-box">
 
@@ -149,14 +124,15 @@
 				<h3>The Cutting edge in exercise</h3>
 
 				<p>ML Strength can offer cutting edge exercise options, including group
-					fitness classes and one-on-one personal training sessions for weight loss,
+					fitness classes and one-on-one personal training sessions for weight
+					loss,
 					circuit training, boxing and karate. Our trainers are all Les Mills
 					accredited instructors that are second to none, which all have Bachelor
 					Degrees in
 					Human Movements..</p>
 
 
-				<a href="html/classes.html" class="main-page__link btn">Check out classes</a>
+				<a href="classes.html" class="btn">Check out classes</a>
 
 
 			</div>
@@ -165,70 +141,27 @@
 		</section>
 
 
-
-
 	</main>
+
 
 	<!--  FOOTER  -->
 
 
-	<footer>
 
-		<div class="container grid">
-
-			<div class="logo-box">
-
-				<img src="/images/ML Strength_trans-logo.png" class="logo-box--image"
-					alt="logo">
-
-			</div>
+	<!--// library Imported Footer -->
 
 
-
-			<div class="text-box">
-
-				<ul class="text-box__list">
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">Company</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">contact us</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">Privacy Policy</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">T&C</a>
-					</li>
-
-				</ul>
-
-			</div>
+	<div w3-include-html="/footer.html"></div>
 
 
-			<div class="text-box__copyright">
-
-				<p class="copyright__paragraph">
-					&copy;2023 by HL Strength - Health and fitness.
-				</p>
-				<p class="copyright__paragraph">
-					All rights reserved
-				</p>
-
-
-			</div>
-
-
-		</div>
-
-
-	</footer>
-
+	<!-- Javascript -->
 	<script src="javascript/script.js"></script>
+
+
+	<script>w3.includeHTML();</script>
+
+
+
 
 </body>
 

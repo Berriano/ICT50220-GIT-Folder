@@ -62,39 +62,12 @@
 
 	<header class="grid__25vh page-header classes__header-image">
 
-		<nav>
 
-			<button class="main_btn">
+		<!--// library imported header  -->
 
-				<ion-icon name="menu" class="icon"></ion-icon>
 
-			</button>
-		</nav>
 
-		<ul class="hidden-menu hidden">
-
-			<li class="hidden-menu--list">
-				<a href="../index.html" class="hidden-menu--link">home</a>
-			</li>
-
-			<li class="hidden-menu--list">
-				<a href="classes.html" class="hidden-menu--link">Classes</a>
-			</li>
-
-			<li class="hidden-menu--list">
-				<a href="our_philosophy.html" class="hidden-menu--link">Our
-					philosophy</a>
-			</li>
-
-			<li class="hidden-menu--list">
-				<a href="owner.html" class="hidden-menu--link">the owner</a>
-			</li>
-
-			<li class="hidden-menu--list">
-				<a href="contact.html" class="hidden-menu--link">contact</a>
-			</li>
-
-		</ul>
+		<div class="div-head" w3-include-html="/navigation.html"></div>
 
 
 		<img src="../images/ML Strength_trans-logo.png" class="logo"
@@ -121,14 +94,12 @@
 		<section class="classes grid__12-cols">
 
 
-			<img src="../images/gym-cardio.jpg" class="classes__image classes__image-1"
+			<img src="../images/gym-cardio.jpg" class="classes__image-1" alt="gym-workout">
+
+			<img src="../images/gym-strength.jpg" class="classes__image-2"
 				alt="gym-workout">
 
-			<img src="../images/gym-strength.jpg" class="classes__image classes__image-2"
-				alt="gym-workout">
-
-			<img src="../images/gym-dance.jpg" class="classes__image classes__image-3"
-				alt="gym-workout">
+			<img src="../images/gym-dance.jpg" class="classes__image-3" alt="gym-workout">
 
 
 			<!-- ACCORDION -->
@@ -157,10 +128,9 @@
 
 					<p class="accordion__paragraph">Cardio</p>
 
-					<button class="accordion__icon">
+					<button>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-							stroke-width="1.5" stroke="currentColor"
-							class="accordion__icon-chevron">
+							stroke-width="1.5" stroke="currentColor" class="chevron">
 							<path stroke-linecap="round" stroke-linejoin="round"
 								d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
 						</svg>
@@ -300,10 +270,9 @@
 
 					<p class="accordion__paragraph">Strength/Stamina</p>
 
-					<button class="accordion__icon">
+					<button>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-							stroke-width="1.5" stroke="currentColor"
-							class="accordion__icon-chevron">
+							stroke-width="1.5" stroke="currentColor" class="chevron">
 							<path stroke-linecap="round" stroke-linejoin="round"
 								d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
 						</svg>
@@ -379,10 +348,9 @@
 
 					<p class="accordion__paragraph">Dance/ Well Being</p>
 
-					<button class="accordion__icon">
+					<button>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-							stroke-width="1.5" stroke="currentColor"
-							class="accordion__icon-chevron">
+							stroke-width="1.5" stroke="currentColor" class="chevron">
 							<path stroke-linecap="round" stroke-linejoin="round"
 								d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
 						</svg>
@@ -494,47 +462,28 @@
 
 			<div class="accordion__gallery">
 
-				<img src="/images/gym-1.jpg"
-					class="accordion__gallery-image accordion__gallery-image-1" alt="">
+				<img src="/images/gym-1.jpg" class="image-1" alt="">
 
 
-				<img src="/images/gym-12.jpg"
-					class="accordion__gallery-image accordion__gallery-image-2" alt="">
+				<img src="/images/gym-12.jpg" class="image-2" alt="">
 
 
-				<!-- <img src="/images/gym-19.jpg"
-					class="accordion__gallery-image accordion__gallery-image-3" alt=""> -->
+				<img src="/images/gym-17.jpg" class="image-4" alt="">
 
 
-				<img src="/images/gym-17.jpg"
-					class="accordion__gallery-image accordion__gallery-image-4" alt="">
+				<img src="/images/gym-cta_1.jpg" class="image-5" alt="">
 
 
-				<img src="/images/gym-cta_1.jpg"
-					class="accordion__gallery-image accordion__gallery-image-5" alt="">
+				<img src="/images/gym-20.jpg" class="image-8" alt="">
 
 
-				<!-- <img src="/images/gym-5.jpg"
-					class="accordion__gallery-image accordion__gallery-image-6" alt="">
-
-				<img src="/images/gym-weights.jpg"
-					class="accordion__gallery-image accordion__gallery-image-7" alt=""> -->
+				<img src="/images/gym-8.jpg" class="image-9" alt="">
 
 
-				<img src="/images/gym-20.jpg"
-					class="accordion__gallery-image accordion__gallery-image-8" alt="">
+				<img src="/images/gym-pair.jpg" class="image-10" alt="">
 
 
-				<img src="/images/gym-8.jpg"
-					class="accordion__gallery-image accordion__gallery-image-9" alt="">
-
-
-				<img src="/images/gym-4.jpg"
-					class="accordion__gallery-image accordion__gallery-image-10" alt="">
-
-
-				<img src="/images/gym-2.jpg"
-					class="accordion__gallery-image accordion__gallery-image-11" alt="">
+				<img src="/images/gym-2.jpg" class="image-11" alt="">
 
 
 			</div>
@@ -546,64 +495,22 @@
 
 	</main>
 
+
+
 	<!--  FOOTER  -->
 
 
-	<footer>
-
-		<div class="container grid">
-
-			<div class="logo-box">
-
-				<img src="/images/ML Strength_trans-logo.png" class="logo-box--image"
-					alt="logo">
-
-			</div>
+	<!--// library Imported Footer -->
 
 
-
-			<div class="text-box">
-
-				<ul class="text-box__list">
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">Company</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">contact us</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">Privacy Policy</a>
-					</li>
-
-					<li class="text-box__list-item">
-						<a href="#" class="text-box__list-link">T&C</a>
-					</li>
-
-				</ul>
-
-			</div>
+	<div w3-include-html="/footer.html"></div>
 
 
-			<div class="text-box__copyright">
-
-				<p class="copyright__paragraph">
-					&copy;2023 by HL Strength - Health and fitness.
-				</p>
-				<p class="copyright__paragraph">
-					All rights reserved
-				</p>
+	<!--// library  -->
 
 
-			</div>
-
-
-		</div>
-
-
-	</footer>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script>w3.includeHTML();</script>
 
 
 	<script src="../javascript/script.js"></script>
