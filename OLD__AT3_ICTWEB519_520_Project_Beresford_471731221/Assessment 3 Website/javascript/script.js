@@ -7,19 +7,7 @@
 const nav = document.querySelectorAll('nav');
 
 
-const navHtml = `
-
-<button class="menu-btn">
-
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-	stroke-width="1.5" stroke="currentColor" class="hamburger-icon">
-	<path stroke-linecap="round" stroke-linejoin="round"
-		d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg>
-
-</button>
-
-<ul class"hidden-list">
+const navHtml = `<ul>
 	<li> <a href="index.html">home</a> </li>
 	<li> <a href="classes.html">Classes</a>	</li>
 	<li> <a href="philosophy.html">Philosophy</a>	</li>
@@ -35,7 +23,7 @@ const footer = document.querySelectorAll('footer');
 
 const footerHtml = `<div class="container grid">
 <div class="logo-box">
-	<img src="img/ML Strength_trans-logo.png" class="logo-box--image" alt="logo">
+	<img src="images/ML Strength_trans-logo.png" class="logo-box--image" alt="logo">
 </div>
 <div class="text-box">
 	<ul>
@@ -52,20 +40,3 @@ const footerHtml = `<div class="container grid">
 </div>`;
 
 footer.forEach(footer => footer.insertAdjacentHTML('beforeend', footerHtml));
-
-
-
-
-
-// Hamburger Nav
-
-const menuBtn = document.querySelector(".menu-btn");
-const burgerIcon = document.querySelector(".hamburger-icon");
-const list = document.querySelector("nav ul");
-
-console.log(burgerIcon, menuBtn);
-
-menuBtn.addEventListener('click', function () {
-
-	list.classList.toggle('show-list');
-})
