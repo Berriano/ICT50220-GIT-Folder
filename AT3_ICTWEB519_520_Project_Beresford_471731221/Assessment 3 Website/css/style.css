@@ -286,7 +286,7 @@ nav ul a:hover, nav ul a:active {
   grid-template-rows: 2fr 1fr 1fr;
   align-items: start;
   justify-items: center;
-  padding: 0 8rem 0 10rem;
+  padding: 0 4.6rem 0 10rem;
 }
 .text--box a:link, .text--box a:visited {
   display: inline-block;
@@ -313,10 +313,17 @@ nav ul a:hover, nav ul a:active {
   font-size: 2.6rem;
 }
 .text--box h1 {
-  font-size: 5.4rem;
+  font-size: 5rem;
   line-height: 0.95;
   align-self: center;
   color: var(--font-color-headings);
+
+}
+.text--box h1 span{
+ display: block;
+ margin-top: 3.2rem;
+ color: var(--color-secondary);
+ 
 }
 
 .main-image {
@@ -830,6 +837,29 @@ input[type=submit]:hover {
 }
 
 /*//-------------------- MEDIA QUERIES ----------------------- */
+
+@media screen and (min-width: 117.5em) {
+	
+	.classes__header-image,
+	.philosophy__header-image,
+	.owner__header-image,
+	.contact__header-image,.main-image{
+		max-width: 188rem;
+		margin: 0 auto;
+	}
+	
+	
+	.container{
+		max-width: 136rem;
+		margin: 0 auto;
+	}
+	
+	
+ 
+  }
+	
+	
+
 @media screen and (max-width: 87.5em) {
   html {
     font-size: 56.25%;
@@ -871,6 +901,10 @@ input[type=submit]:hover {
     padding: 0.2rem;
   }
 }
+
+
+
+
 /*/////////// 1080px //////////// */
 @media screen and (max-width: 67.5em) {
   html {
@@ -1389,6 +1423,7 @@ footer .text-box__copyright {
 	.main-page__text-box{
 		
 		padding-bottom: 4rem;
+		gap: 2rem;
 	}
 	
 	nav{
@@ -1415,7 +1450,10 @@ footer .text-box__copyright {
 	
 	.text--box{
 		grid-column: 1/4;
-		grid-template-rows: 5fr 3fr 2fr;
+		grid-template-rows: 5fr 3fr 2fr;		
+		gap: 2.4rem;
+		grid-row: 2/5;
+		
 	}
 	
 	
@@ -1579,26 +1617,19 @@ footer .text-box__copyright {
  
  @media screen and (max-width: 23.5em) {	
 	
-	
+
 	.grid__4-cols{
 		
 		grid-template-rows: 2fr 3fr;
+	
 	}
 	
 	
 	.main-image{
 		
-		height: 80vh;
+		height: 77vh;
 	}
-	
-	.text--box{
 		
-		gap: 3.6rem;
-		align-items: center;
-	}
-	
-
-	
 
   }
 	
@@ -1611,6 +1642,11 @@ footer .text-box__copyright {
 	
 .text--box	h1{
 		font-size: 4.4rem;
+	}
+	
+.text--box	{
+		gap: 1.6rem;
+		padding: 0 2rem;
 	}
 	
 	.main-page{
