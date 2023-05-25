@@ -9,8 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<!-- FONTS  --->
-
 	<!-- LATO -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,18 +36,32 @@
 		rel="stylesheet">
 
 
-	<!-- CSS  --->
 
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<link rel="stylesheet" href="css/style.prefix.css">
+	<!-- CSS  -->
 
-
-	<!-- ICON SCRIPT  -->
-
-	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 
 
-	<link rel="icon" href="img/ML Strength_trans-logo.png">
+
+	<!-- JQuery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+	</script>
+
+	<script>
+		// when the document is loaded(ready) - execute function
+		$(document).ready(function () {
+
+			$("#navigation").load("html/navigation.html");
+			$("#footer").load("html/footer.html")
+
+
+		})
+	</script>
+
+
+
+	<link rel="icon" href="img/ML-logo.png">
 
 	<title>ML Strength - Our Philosophy</title>
 
@@ -65,14 +77,13 @@
 	<header class="grid__25vh page-header philosophy__header-image">
 
 
-		<nav>
+		<nav id="navigation">
 
 
 		</nav>
 
 
-		<img src="img/ML Strength_trans-logo.png" class="logo"
-			alt="ML STRENGTH ORANGE LOGO">
+		<img src="img/ML-logo.png" class="logo" alt="ML Strength orange dumbell logo">
 
 
 		<div class="white__stripe">
@@ -84,8 +95,8 @@
 		</div>
 
 
-
 	</header>
+
 
 	<!--  MAIN  -->
 
@@ -96,13 +107,15 @@
 			<div class="philosophy__image-box ">
 
 				<img src="img/gym-building-philosophy.jpg" class="philosophy__image-box--img"
-					alt="gym">
+					alt="gym equipment set up in hangar - wide image">
 
 
 
 			</div>
 
 			<div class="philosophy__text-box">
+
+				<h2 class="philosophy__heading">Our Philosophy</h2>
 
 				<p>
 
@@ -147,9 +160,6 @@
 
 				</p>
 
-
-
-
 			</div>
 
 
@@ -160,12 +170,10 @@
 
 	<!--  FOOTER  -->
 
-	<footer>
+	<footer id="footer">
+
 
 	</footer>
-
-
-	<script src="javascript/script.js"></script>
 
 
 </body>

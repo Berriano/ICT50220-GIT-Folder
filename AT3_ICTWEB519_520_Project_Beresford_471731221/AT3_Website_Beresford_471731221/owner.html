@@ -9,8 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<!-- FONTS  --->
-
 	<!-- LATO -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,16 +35,32 @@
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
 
-	<!-- CSS  --->
 
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<link rel="stylesheet" href="css/style.prefix.css">
 
-	<!-- ICON SCRIPT  -->
+	<!-- CSS  -->
 
-	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 
-	<link rel="icon" href="img/ML Strength_trans-logo.png">
+
+	<!-- JQuery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+	</script>
+
+	<script>
+		// when the document is loaded(ready) - execute function
+		$(document).ready(function () {
+
+			$("#navigation").load("html/navigation.html");
+			$("#footer").load("html/footer.html")
+
+
+		})
+	</script>
+
+
+
+	<link rel="icon" href="img/ML-logo.png">
 
 	<title>ML Strength - Owner</title>
 
@@ -62,14 +76,13 @@
 	<header class="grid__25vh page-header owner__header-image">
 
 
-		<nav>
+		<nav id="navigation">
 
 
 		</nav>
 
 
-		<img src="img/ML Strength_trans-logo.png" class="logo"
-			alt="ML STRENGTH ORANGE LOGO">
+		<img src="img/ML-logo.png" class="logo" alt="ML Strength orange dumbell logo">
 
 
 		<div class="white__stripe">
@@ -92,35 +105,29 @@
 
 			<div class="owner__text-box">
 
+				<h2 class="owner__heading">Meet Maurice...</h2>
+
 				<p>
 					Hi, my name is Maurice Lidman and my background is in boxing. I competed as
 					an amateur
 					in my early years and now like to share my knowledge and expertise as a
 					coach. It is not
 					unknown for me to jump into the ring as your sparring partner.
-
-
 				</p>
 
 				<p>
-
 					For over three decades Maurice has been involved in the boxing scene. He
 					has competed
 					as an amateur in his early years and now shares his knowledge and expertise
 					as a coach,
 					by running his boxing classes with passion and enthusiasm.
-
-
 				</p>
 
-
 				<p>
-
 					The atmosphere in our boxing classes is fun, exciting and highly energised.
 					Whether it is your first class or you're an intermediate level boxer, you
 					will gain a lot by
 					becoming involved. It is one of the best cardiovascular workouts available.
-
 				</p>
 
 
@@ -128,8 +135,8 @@
 
 			<div class="owner__image-box">
 
-				<img src="img/gym-owner-2.jpg" alt="owner">
-
+				<img src="img/gym-owner-2.jpg"
+					alt="owner of gym wearing boxing gloves and shorts">
 
 			</div>
 
@@ -141,15 +148,10 @@
 
 	<!--  FOOTER  -->
 
-	<footer>
 
-
+	<footer id="footer">
 
 	</footer>
-
-
-	<script src="javascript/script.js"></script>
-
 
 
 </body>

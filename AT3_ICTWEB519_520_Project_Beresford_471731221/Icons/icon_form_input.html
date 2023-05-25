@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Absolutely positioned icons in form fields</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	form {
+		max-width:400px;		/* Set the form width */
+		margin:auto;			/* Centre form on the page */
+	}
+	
+	.input-icons i {
+		position: absolute;		/* Set an absolute position for the icon */
+	}
+	
+	.input-icons {
+		width: 100%;			/* Set the icon container width */
+		margin-bottom: 10px;	/* Set the bottom margin around the icon container*/
+	}
+	
+	.icon {
+		padding: 10px;			/* Set the padding around the icon */
+		min-width: 40px;		/* Set the minimum width for the icon */
+		color: #587BDB;			/* Set a color for the icon */
+	}
+	
+	.input-field {
+		width: 100%;			/* Set the width of the for input field */
+		padding: 10px;			/* Set the padding in the input field */
+		margin-bottom: 10px;	/* Set a bottom margin for the input field */
+		border-color: rgba(88,123,219,1.00);
+		border-radius: 10px;	/* Set a border radius for the input field */
+/*		text-align: center;		/* Centre align the text in the input field (left align text will be hidden) OR ... */
+		padding-left: 30px;		/* Add padding to align the text to the left in the input field */
+	}
+	
+</style>
+</head>
+
+<body>
+	<h3>Adding icons inside a form input element</h3>
+	<form>
+		<h4>Login:</h4>
+		<!-- If using a label then each form input and icon needs to be nested within it's own div element -->
+		<label for="email">Email:</label>
+		<div class="input-icons">
+			<i class="fa fa-envelope icon"></i>
+			<input type="email" id="email" name="email" class="input-field" >
+		</div>
+		<!-- With no form labels all form inputs and icons can be nested within a single div element -->
+		<div class="input-icons">
+			<i class="fa fa-user icon"></i>
+			<input type="text" id="username" name="username" class="input-field" >
+			<i class="fa fa-lock icon"></i>
+			<input type="password" id="password" name="password" class="input-field" >
+		</div>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

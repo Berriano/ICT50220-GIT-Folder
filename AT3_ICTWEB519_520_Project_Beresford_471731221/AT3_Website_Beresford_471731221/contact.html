@@ -9,16 +9,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<!-- FONTS  --->
-
-
-
 	<!-- LATO -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
 		rel="stylesheet">
 
 
@@ -35,35 +30,49 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap">
 
 
 	<!-- font-awesome -->
 
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-	</link>
 
 
-	<!-- CSS  --->
 
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<link rel="stylesheet" href="css/style.prefix.css">
+	<!-- CSS  -->
 
-	<!-- ICON SCRIPT  -->
+	<link rel="stylesheet" href="css/style.css">
 
-	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-	<link rel="icon" href="img/ML Strength_trans-logo.png">
+
+	<!-- JQuery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+	</script>
+
+	<script>
+		// when the document is loaded(ready) - execute function
+		$(document).ready(function () {
+
+			$("#navigation").load("html/navigation.html");
+			$("#footer").load("html/footer.html")
+
+
+		})
+	</script>
+
+
+	<!-- favicon -->
+
+
+	<link rel="icon" href="img/ML-logo.png">
 
 	<title>ML Strength - Contact</title>
 
 
 </head>
-
-
 
 
 <body>
@@ -73,12 +82,11 @@
 	<header class="grid__25vh page-header contact__header-image">
 
 
-		<nav>
+		<nav id="navigation">
 
 		</nav>
 
-		<img src="img/ML Strength_trans-logo.png" class="logo"
-			alt="ML STRENGTH ORANGE LOGO">
+		<img src="img/ML-logo.png" class="logo" alt="ML Strength orange dumbell logo">
 
 
 		<div class="white__stripe">
@@ -100,7 +108,7 @@
 
 			<div class="contact__image-box">
 
-				<img src="img/gym-building-inside.jpg" alt="gym">
+				<img src="img/gym-building-inside.jpg" alt="gym equipment set up in hangar">
 
 			</div>
 
@@ -122,8 +130,8 @@
 
 
 					<label for="fname" class="required">First Name</label>
-					<input type="text" id="fname" name="fname" placeholder="John"
-						pattern="[A-Za-z]{1,32}" title="Enter first name" required>
+					<input type="text" id="fname" name="fname" placeholder="John" pattern="[A-Za-z]{1,32}"
+						title="Enter first name" required>
 
 
 					<div class="icon-parent">
@@ -133,8 +141,8 @@
 					</div>
 
 					<label for="lname" class="required">Last Name</label>
-					<input type="text" id="lname" name="lname" placeholder="Smith"
-						pattern="[A-Za-z]{1,32}" title="Enter last name" required>
+					<input type="text" id="lname" name="lname" placeholder="Smith" pattern="[A-Za-z]{1,32}"
+						title="Enter last name" required>
 
 
 					<div class="icon-parent">
@@ -155,14 +163,14 @@
 					</div>
 
 					<label for="phone" class="required">Phone Number</label>
-					<input type=" tel" id="phone" name="phone" placeholder="0412345678"
-						minlength="10" maxlength="10" size="10" pattern="[0-9]{10}"
+					<input type="tel" id="phone" name="phone" placeholder="0412345678" minlength="10"
+						maxlength="10" size="10" pattern="[0-9]{10}"
 						title="Enter your phone number - 10 characters" required>
 
 
 
 					<label for="birthday">Birthday</label>
-					<input type="date" id="birthday" name="birthday" placeholder="dd/mm/yyyy"
+					<input type="date" id="birthday" name="birthday"
 						title="Use calendar to enter date of birth">
 
 
@@ -183,11 +191,8 @@
 
 						<div class="modal">
 
-
-
-							<iframe src="https://www.youtube.com/embed/y881t8ilMyc"
-								title="Help Video" class="video " height="500px" width="750px"
-								name="youtube" noborder="0" scrolling="yes" seamless></iframe>
+							<iframe src="https://www.youtube.com/embed/y881t8ilMyc" title="Help Video"
+								class="video " height="500" width="750" name="youtube"></iframe>
 
 						</div>
 
@@ -207,13 +212,14 @@
 
 	<!--  FOOTER  -->
 
-	<footer>
+	<footer id="footer">
 
 
 	</footer>
 
-	<script src="javascript/script.js"></script>
+
 	<script src="javascript/contact.js"></script>
+
 
 </body>
 
