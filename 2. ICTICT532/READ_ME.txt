@@ -1,1 +1,0 @@
-to register git folder

@@ -1,0 +1,123 @@
+/* TEXT OVER IMAGE */
+
+.text-over-image {
+	position: relative;
+}
+.text-over-image .content {
+    font-size: 16px;
+    hyphens: none;
+    position: absolute;
+    top: 5px;
+    bottom:29px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+.text-over-image .content > *:first-child {
+	margin-top: 0 !important;
+}
+.text-over-image.left .content {
+	border-left: 12px #c81105 solid;
+	left:5px;
+}
+.text-over-image.right .content {
+	border-right: 12px #c81105 solid;
+	right:5px;
+}
+.text-over-image.borderless .thumbnail {
+	border: none;
+	margin-bottom: 5px;
+	padding: 0
+}
+.text-over-image.borderless .content {
+	bottom:24px;
+	top: 0;
+}
+.text-over-image.left.borderless .content {
+	left:0
+}
+.text-over-image.right.borderless .content {
+	right:0
+}
+.text-over-image .content ul {
+    padding-left:15px;
+}
+/* col-sm */
+@media (max-width: 939px) {
+.text-over-image .thumbnail {
+	margin-bottom: 15px;		
+}
+.text-over-image .content {
+	position: initial !important;
+	background-color:transparent !important;
+	border: none !important;
+	color:#333 !important;
+	padding: 0 !important;
+	margin: 15px 0;
+	width:100% !important;
+}
+}
+
+
+/* FA LIST */
+
+.fa-list {
+    list-style-type: none;
+    margin:0 0 24px 0;
+    padding: 0;
+}
+.fa-list::before {
+  content:none !important;
+}
+.fa-list.left {
+	margin-bottom: 5px;
+}
+.fa-list:before {
+    content: "";
+}
+.fa-list li {
+    padding: 18px 18px 18px 78px;
+    margin-bottom: 10px;
+    position: relative;
+    min-height: 60px;
+}
+.fa-list.bordered {
+    margin-left: 0;
+}
+.fa-list.bordered li {
+	background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px -1px rgba(0,0,0,0.15)
+}
+.fa-list li > i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 150%;
+    text-align: center;
+    color: #7b7b7b;
+    width: 60px;
+    height: auto;
+}
+.fa-list.circle li > i {
+	border-radius: 50%;
+	font-size: 2em;
+    height: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.fa-list li > i::before, ol.fa-list li > i > strong {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: auto;
+    margin-right: auto;
+}
+
